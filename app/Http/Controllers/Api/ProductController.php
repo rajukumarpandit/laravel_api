@@ -79,16 +79,6 @@ class ProductController extends Controller
             }
         }
         return response()->json($response,200);
-        // $imageName=rand().'.'.$request->p_image->extension();
-        // $request->p_image->move(public_path('productImage'), $imageName);
-
-        // $product= new Product();
-        // $product->product_name=$request->p_name;
-        // $product->product_image=$imageName;
-        // $product->product_price=$request->p_price;
-        // $product->product_description=$request->p_description;
-        // $product->save();
-        //return ["message"=>"data insert successfully!", "status"=>"true"];
     }
 
     /**
